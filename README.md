@@ -11,7 +11,7 @@ The first NG release, 4.0.0 , is a fork of v3.3.2 of the original add-on with th
 The name and icon have been changed to differentiate from the original version.
 
 News:
-Release 4.0.1 - Maintenance and Options for folder creation, storage type, TB69 support.
+Release 4.0.4 - Maintenance, formatting
 
 Original Add-on homepage:
 https://addons.thunderbird.net/en-US/thunderbird/addon/importexporttools/?src=search
@@ -19,11 +19,11 @@ https://addons.thunderbird.net/en-US/thunderbird/addon/importexporttools/?src=se
 Original extension homepage of the author:
 https://freeshell.de/~kaosmos/mboximport-en.html
 
-![IETng_version](https://img.shields.io/badge/version-v4.0.1-darkorange.png?label=ImportExportTools%20NG)
-[![IETng_tb_version](https://img.shields.io/badge/version-v4.0.1-blue.png?label=Thunderbird%20Add-On)](https://addons.thunderbird.net/en-US/thunderbird/addon/)
+![IETng_version](https://img.shields.io/badge/version-v4.0.4-darkorange.png?label=ImportExportTools%20NG)
+[![IETng_tb_version](https://img.shields.io/badge/version-v4.0.4-blue.png?label=Thunderbird%20Add-On)](https://addons.thunderbird.net/en-US/thunderbird/addon/)
 ![Thunderbird_version](https://img.shields.io/badge/version-v60.0--69.*-blue.png?label=Thunderbird)
 [![License: GPL 3.0](https://img.shields.io/badge/License-GPL%203.0-red.png)](https://opensource.org/licenses/GPL-3.0)
-![Release Status](https://img.shields.io/badge/Release%20Status-v4.0.1%20Released-brightgreen.png)
+![Release Status](https://img.shields.io/badge/Release%20Status-v4.0.4%20Released-brightgreen.png)
 #
 
 ## Import Export Tools NG Add-On Features
