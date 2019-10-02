@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "__MSG_extensionName__ 5-b1 csv-index",
+    "name": "__MSG_extensionName__ 5-b1 csv-index beta",
     "version": "4.0.5-b1",
     "description": "__MSG_extensionDescription__",
     "author": "Christopher Leidigh",
@@ -8,8 +8,7 @@
     "applications": {
         "gecko": {
             "id": "ImportExportToolsNG@cleidigh.kokkini.net",
-            "strict_min_version": "60.0",
-            "strict_max_version": "69.*"
+            "strict_min_version": "60.0"
         }
     },
     "legacy": {
