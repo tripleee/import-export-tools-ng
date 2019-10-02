@@ -729,7 +729,8 @@ function createIndex(type, file2, hdrArray, msgFolder, justIndex, subdir) {
 
 function createIndexCSV(type, file2, hdrArray, msgFolder, addBody) {
 	var clone2;
-	if (type !== 7) {
+
+	if (!addBody) {
 		clone2 = file2.clone();
 		clone2.append("index.csv");
 	} else {
@@ -1821,11 +1822,21 @@ function IETstoreBody(msguri) {
 	var text;
 
 	fromStr.data = dataUTF8;
+
 	try {
-		formatConverter.convert("text/html", fromStr, fromStr.toString().length, "text/unicode", toStr, {});
+		const versionChecker = Services.vc;
+		const currentVersion = Services.appinfo.platformVersion;
+
+		// signature for format converter changed after 60, dropped in and out lengths
+		if (versionChecker.compare(currentVersion, "61") >= 0) {
+			formatConverter.convert("text/html", fromStr, "text/unicode", toStr);
+		} else {
+			formatConverter.convert("text/html", fromStr, fromStr.toString().length, "text/unicode", toStr, {});
+		}
 	} catch (e) {
 		text = dataUTF8;
 	}
+
 	if (toStr.value) {
 		toStr = toStr.value.QueryInterface(Ci.nsISupportsString);
 		var os = navigator.platform.toLowerCase();
